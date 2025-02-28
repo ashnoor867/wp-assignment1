@@ -1,0 +1,129 @@
+/* Home template stylings */
+.home-template-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.latest-learnings-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-learning-thumbnail {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.latest-learning-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.latest-learnings-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.latest-learnings-title {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+
+.latest-learnings-title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.latest-learnings-meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.latest-learnings-excerpt {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background: #0073aa;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background 0.3s;
+    width: fit-content;
+}
+
+.read-more-btn:hover {
+    background: #005f8d;
+}
+
+/* footer styles */
+footer {
+    background-color: #0073aa;
+    padding: 1px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    color: white;
+}
+
+/* Menu stylings */
+.menu-main-container {
+    background-color: #0073aa;
+    padding: 1px 0;
+}
+
+#menu-main {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+#menu-main a {
+    color: white;
+    text-decoration: none;
+    height: 100%;
+}
+
+#menu-main a:hover {
+    text-decoration: underline;
+    text-decoration-color: #64ceff;
+}
+
+/* group block stylings */
+.wp-block-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;/
+}
+.wp-block-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.wp-block-group img {
+    height: auto;
+}
